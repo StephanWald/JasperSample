@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>eu.basis-europe</groupId>
+    <artifactId>jaspersample</artifactId>
+    <version>0.0.1</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <profiles>
+    <profile>
+        <id>maxbbxlib</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+
+        <properties>
+            <jar-directory>/Users/beff/bbx/.lib</jar-directory>
+        </properties>
+    </profile>
+</profiles>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>BBjJDBC.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/BBjJDBC.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>basiscomponents.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/utils/basiscomponents.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>BBjStartup.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/BBjStartup.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>jasperreports-javaflow-6.20.5.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/utils/jasperreports-javaflow-6.20.5.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>commons-logging-1.2.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/commons-logging-1.2.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>commons-collections4-4.4.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/commons-collections4-4.4.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>commons-digester_2.1.0.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/commons-digester_2.1.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>net.tascalate.javaflow.api-2.7.3.jar</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/net.tascalate.javaflow.api-2.7.3.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>log4j-core</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/log4j-core-2.20.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>log4j-api</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/log4j-api-2.20.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/slf4j-api-1.7.35.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/slf4j-jdk14-1.7.35.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.basis.lib</groupId>
+            <artifactId>openpdf</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${jar-directory}/openpdf-1.3.30.jaspersoft.1.jar</systemPath>
+        </dependency>
+
+    </dependencies>
+
+</project>
